@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # USER PROVISINING SCRIPT
 # Written for WMU's WALI CDH Team
 # Script written by Adam Pohl
@@ -23,7 +25,7 @@ sudo_users=()
 # Create a user and ensure .ssh/authorized_keys exists
 create_user () {
     local user=$1
-    sudo useradd -m $user
+    sudo useradd -m $user -s /bin/bash
     sudo mkdir -p /home/$user/.ssh
     sudo touch /home/$user/.ssh/authorized_keys
     pw=$(randpw)
