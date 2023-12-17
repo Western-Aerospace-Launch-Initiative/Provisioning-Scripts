@@ -17,7 +17,7 @@ finish_build() {
 
 install_compiler
 git clone git@github.com:Western-Aerospace-Launch-Initiative/Provisioning-Scripts.git
-mv Provisioning-Scripts/beablebone.toolchain ../../fprime/cmake/toolchain
+mv Provisioning-Scripts/beaglebone.toolchain ../../fprime/cmake/toolchain
 rm -r -f Provisioning-Scripts
 fprime-util purge beaglebone -f
 finish_build
