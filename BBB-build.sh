@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Author: Noah Braasch
-# Date: 5/15/2023
-# Revision: 000
-# Revisor: 
+# Date: 12/17/2023
+# Revision: 001
+# Revisor: Nathan Snyder 
 #********************* 
 
 install_compiler() {
